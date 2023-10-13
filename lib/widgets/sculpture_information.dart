@@ -81,7 +81,7 @@ Widget sculptureInformation(SculptureModel escultura) {
                 const SizedBox(
                     height: 10), // Espacio vertical entre los elementos
                 const Text(
-                  "Movimiento escultórico:",
+                  "Corriente escultórica:",
                   style: TextStyle(
                     fontSize: 16, // Tamaño de fuente aumentado
                     fontWeight: FontWeight.bold, // Texto en negrita

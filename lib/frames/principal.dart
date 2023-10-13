@@ -1,16 +1,26 @@
+import 'package:escultunas_application/db/precalc.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/carousel_with_indicator.dart';
 import '../widgets/drawer.dart';
 import '../widgets/gradient.dart';
 
-class Principal extends StatelessWidget {
-  const Principal({super.key});
+class Principal extends StatefulWidget {
+  const Principal({Key? key}) : super(key: key);
 
-  goToPage(context) {
-    Navigator.pushNamed(context, "/sculptures_list");
-  }
+  @override
+  PrincipalState createState() => PrincipalState();
+}
 
+void initState() {
+  insertarDatosBD();
+}
+
+goToPage(context) {
+  Navigator.pushNamed(context, "/sculptures_list");
+}
+
+class PrincipalState extends State<Principal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +44,7 @@ class Principal extends StatelessWidget {
                     width: double.infinity,
                     height: 300, // Ajustar la altura de la imagen aquí
                     child: Image.asset(
-                      'assets/images/logo.png',
+                      'assets/images/escudo_tunas.png',
                       fit: BoxFit.scaleDown,
                     ),
                   ),

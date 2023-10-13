@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../db/db.dart';
-import '../db/precalc.dart';
 import '../models/sculpture_model.dart';
 import '../widgets/drawer.dart';
 import '../widgets/gradient.dart';
@@ -20,7 +19,6 @@ class SculpturesListState extends State<SculpturesList> {
 
   @override
   void initState() {
-    insertarDatosBD();
     loadSculpturesData();
     super.initState();
   }

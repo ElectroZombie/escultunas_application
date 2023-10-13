@@ -13,8 +13,8 @@ List<SculptureModel> fillList() {
       foto: 'assets/images/image_1.png',
       material: "Desconocido",
       mov_escultorico: "Desconocido",
-      xpos: 20.9551728,
-      ypos: -76.9623901);
+      xpos: 20.955184,
+      ypos: -76.95981);
 
   SculptureModel S2 = SculptureModel(
       nombre: "Nuestros muertos alzando los brazos",
@@ -22,11 +22,11 @@ List<SculptureModel> fillList() {
       fecha: "1977",
       descripcion:
           "Ubicada en el Memorial “Mártires de Barbados” de esta ciudad. Su creador tuvo como inspiración  el abominable hecho de la explosión del avión de Cubana, en Barbados, ocurrido en 1976; además de los versos de Bonifacio Byrne, de los cuales tomó su título. Se utilizó como soporte el metal soldado, pero sin darle terminación, dejando en la pieza las asperezas del material y  las que el proceso creativo implicó, con el fin de  acentuar visualmente el carácter dramático y desgarrador que entraña su esencia. La obra fue premiada en un Salón Uneac, en 1978.",
-      foto: 'assets/images/image_2.jpg',
+      foto: 'assets/images/image_2.png',
       material: "Metal",
       mov_escultorico: "Desconocido",
-      xpos: 20.9554,
-      ypos: -76.9605);
+      xpos: 20.955435,
+      ypos: -76.96059);
 
   SculptureModel S3 = SculptureModel(
       nombre: "Monumento al trabajo",
@@ -46,7 +46,7 @@ List<SculptureModel> fillList() {
       fecha: "1977",
       descripcion:
           "Primera obra que llegó a Las Tunas como respuesta al acuerdo de enviar piezas a la ciudad para engalanarla, en junio de 1977. Instalada a la entrada de El Cornito, como para dar la bienvenida a los visitantes a este idílico lugar, cuna del bardo tunero «El Cucalambé». Su autor, guantanamero de formación autodidacta, concibió esta escultura en piedra a escala urbana. Recrea, con gran naturalismo a un campesino en el instante que trova su tonada.",
-      foto: 'assets/images/image_4.jpg',
+      foto: 'assets/images/image_4.png',
       material: "Desconocido",
       mov_escultorico: "Desconocido",
       xpos: 20.9612151,
@@ -70,7 +70,7 @@ List<SculptureModel> fillList() {
       fecha: "1978",
       descripcion:
           "Es una obra que se distingue por su regia presencia. Realizada en 1978, está situada sobre un montículo que preside el panorama visual de El Cornito. Se inspira en los textos de El Cucalambé, que narran las discrepancias entre los jefes aborígenes de dos regiones de nuestro territorio: Maniabo y Jibacoa. Las cabezas de ambos se integran, contrapuestas, en una estructura única, cuya abertura interior sirve como murales, donde que pueden leerse versos del bardo tunero. Su autor interpretó con fidelidad la fisonomía del indio cubano, así como la psicología de sus personajes, revelada en las expresiones de sus rostros. Goza de gran aceptación en la población y se ha convertido en un emblema de la ciudad.",
-      foto: 'assets/images/image_6.jpg',
+      foto: 'assets/images/image_6.png',
       material: "Desconocido",
       mov_escultorico: "Desconocido",
       xpos: 20.9615305,
@@ -94,24 +94,263 @@ List<SculptureModel> fillList() {
       fecha: "1979",
       descripcion:
           "Monumental obra que engalana nuestro centro urbano, se encuentra ubicada desde 1979 en el exterior del local que hoy ocupa la CTC Provincial, en la calle Vicente García. Constituye un canto de aliento a la lucha por conseguir la liberación de las naciones oprimidas. Representa la conjugación de un enorme fusil (que apunta al cielo en señal de victoria) con una cadena que lo ata, mas el primero impetuoso, se abre paso a través de los eslabones destruidos.",
-      foto: 'assets/images/image_8.jpg',
+      foto: 'assets/images/image_8.png',
       mov_escultorico: "Desconocido",
-      xpos: 20.9558662,
-      ypos: -76.9576417);
+      xpos: 20.95581,
+      ypos: -76.957706);
 
   SculptureModel S9 = SculptureModel(
       nombre: "Plaza Martiana",
-      autor: "Domingo Alás\nRené Peña\nRogelioRicardo\nNelson Téllez",
+      autor: "Domingo Alás\nRené Peña\nRogelio Ricardo\nNelson Téllez",
       fecha: "1995",
       descripcion:
           "Se inauguró en marzo de 1995 en el corazón de la ciudad. Constituye un paradigma de armónica integración entre la arquitectura, la escultura y el urbanismo. Su autor Domingo Alás decidió con esta obra rendir tributo a nuestro Héroe Nacional. Forman parte de su concepción general: La efigie de José Martí, realizado en bronce fundido por Rita Longa, constituyendo el elemento central de la Plaza. Aparecen allí también dos murales escultóricos, alusivos a la obra martiana y a la caída en combate de Ángel Guardia, en ese mismo lugar. Sus creadores: Pedro Escobar, René Peña, Rogelio Ricardo y Nelson Téllez.",
-      foto: 'assets/images/image_9.jpg',
+      foto: 'assets/images/image_9.png',
       material: "Desconocido",
       mov_escultorico: "Desconocido",
       xpos: 20.9566058,
       ypos: -76.9530889);
 
-  L.addAll([S1, S2, S3, S4, S5, S6, S7, S8, S9]);
+  SculptureModel S10 = SculptureModel(
+      nombre: "Gimnasta",
+      autor: "Rafael Ferrero Lores",
+      fecha: "1989",
+      descripcion: "",
+      foto: 'assets/images/image_10.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.956817,
+      ypos: -76.944334);
+
+  SculptureModel S11 = SculptureModel(
+      nombre: "Che",
+      autor: "Alberto Lescay Merencio",
+      fecha: "1982",
+      descripcion: "",
+      foto: 'assets/images/image_11.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.951006,
+      ypos: -76.93609);
+
+  SculptureModel S12 = SculptureModel(
+      nombre: "Sin título",
+      autor: "José Luis Gutiérrez",
+      fecha: "1989",
+      descripcion: "",
+      foto: 'assets/images/image_12.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.951094,
+      ypos: -76.947462);
+
+  SculptureModel S13 = SculptureModel(
+      nombre: "Cabildo",
+      autor: "Rogelio Ricardo Fuentes",
+      fecha: "1990",
+      descripcion: "",
+      foto: 'assets/images/image_13.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.957839,
+      ypos: -76.953792);
+
+  SculptureModel S14 = SculptureModel(
+      nombre: "Columnas",
+      autor: "René Peña Carbonell",
+      fecha: "1991",
+      descripcion: "",
+      foto: 'assets/images/image_14.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.957473,
+      ypos: -76.953522);
+
+  SculptureModel S15 = SculptureModel(
+      nombre: "Lenin",
+      autor: "Rafael Ferrero Lores",
+      fecha: "1990",
+      descripcion: "",
+      foto: 'assets/images/image_15.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.962182,
+      ypos: -76.930227);
+
+  SculptureModel S16 = SculptureModel(
+      nombre: "Obelisco a los Mártires de las Guerras de Independencia",
+      autor: "Compañías Italianas",
+      fecha: "1912",
+      descripcion: "",
+      foto: 'assets/images/image_16.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.958469,
+      ypos: -76.953047);
+
+  SculptureModel S17 = SculptureModel(
+      nombre: "Efigie de José Martí",
+      autor: "Rita Longa Aróstegui",
+      fecha: "1995",
+      descripcion: "",
+      foto: 'assets/images/image_17.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.956609,
+      ypos: -76.953153);
+
+  SculptureModel S18 = SculptureModel(
+      nombre: "Cucalambé",
+      autor: "Pedro Escobar",
+      fecha: "1983",
+      descripcion: "",
+      foto: 'assets/images/image_18.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.961618,
+      ypos: -76.999666);
+
+  SculptureModel S19 = SculptureModel(
+      nombre: "Mayor General Vicente García",
+      autor:
+          "Roger Antuña\nManuel Montero\nGabriel Nieves\nRené Peña\nPedro Escobar",
+      fecha: "1997",
+      descripcion: "",
+      foto: 'assets/images/image_19.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.955525,
+      ypos: -76.942938);
+
+  SculptureModel S20 = SculptureModel(
+      nombre: "Estatua de Vicente García",
+      autor: "Compañías Italianas",
+      fecha: "1915",
+      descripcion: "",
+      foto: 'assets/images/image_20.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.956965,
+      ypos: -76.953582);
+
+  SculptureModel S21 = SculptureModel(
+      nombre: "Busto de Federico Capdevila",
+      autor: "Compañías Italianas",
+      fecha: "1953",
+      descripcion: "",
+      foto: 'assets/images/image_21.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.956915,
+      ypos: -76.954207);
+
+  SculptureModel S22 = SculptureModel(
+      nombre: "Fuente escultórica Las Tunas",
+      autor: "José Venegas",
+      fecha: "1976",
+      descripcion: "",
+      foto: 'assets/images/image_22.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.965487,
+      ypos: -76.947537);
+
+  SculptureModel S23 = SculptureModel(
+      nombre: "Busto de Maceo",
+      autor: "Compañías Italianas",
+      fecha: "1947",
+      descripcion: "",
+      foto: 'assets/images/image_23.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.958522,
+      ypos: -76.953094);
+
+  SculptureModel S24 = SculptureModel(
+      nombre: "Mural escultórico del centro histórico",
+      autor: "Leonardo Fuentes Caballín",
+      fecha: "1996",
+      descripcion: "",
+      foto: 'assets/images/image_24.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.957346,
+      ypos: -76.953606);
+
+  SculptureModel S25 = SculptureModel(
+      nombre: "Mural escultórico",
+      autor: "Pedro Escobar\nRené Peña",
+      fecha: "1999",
+      descripcion: "",
+      foto: 'assets/images/image_25.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.956656,
+      ypos: -76.953234);
+
+  SculptureModel S26 = SculptureModel(
+      nombre: "Entre la vida y la muerte",
+      autor: "Manuel Montero\nRoger Antuña",
+      fecha: "1997",
+      descripcion: "",
+      foto: 'assets/images/image_26.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.961881,
+      ypos: -76.949575);
+
+  SculptureModel S27 = SculptureModel(
+      nombre: "Escudo de Las Tunas",
+      autor: "Nicolas Mensa",
+      fecha: "1945",
+      descripcion: "",
+      foto: 'assets/images/image_27.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.957268,
+      ypos: -76.953405);
+
+  SculptureModel S28 = SculptureModel(
+      nombre: "Busto de José Martí",
+      autor: "Desconocido",
+      fecha: "1942",
+      descripcion: "",
+      foto: 'assets/images/image_28.png',
+      material: "Desconocido",
+      mov_escultorico: "Desconocido",
+      xpos: 20.957149,
+      ypos: -76.953533);
+
+  L.addAll([
+    S1,
+    S2,
+    S3,
+    S4,
+    S5,
+    S6,
+    S7,
+    S8,
+    S9,
+    S10,
+    S11,
+    S12,
+    S13,
+    S14,
+    S15,
+    S16,
+    S17,
+    S18,
+    S19,
+    S20,
+    S21,
+    S22,
+    S23,
+    S24,
+    S25,
+    S26,
+    S27,
+    S28
+  ]);
 
   return L;
 }
