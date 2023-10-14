@@ -1,13 +1,14 @@
-# escultunas_aplicattion
+# escultunas_application
+#V
 
 Esta aplicación tiene como objetivo el fungir a modo de catálogo de todas las esculturas de Las Tunas, donde se las pueda encontrar, estudiar y localizar.
 
-Building Specs:
- Flutter SDK: 3.13.0
- Dart SDK: 3.1.0
- Android SDK: 31.0.0
- Java Version: 17.0.8
+Building Specs:\n
+ Flutter SDK: 3.13.0\n
+ Dart SDK: 3.1.0\n
+ Android SDK: 31.0.0\n
+ Java Version: 17.0.8\n
 
-Authors:
- Joan Manuel Molina Gómez
- Eric Michel Villavicencio Reyes
+Authors:\n
+ Joan Manuel Molina Gómez\n
+ Eric Michel Villavicencio Reyes\n
