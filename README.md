@@ -1,5 +1,5 @@
 # escultunas_application
-#V
+#V1.2.4
 
 Esta aplicación tiene como objetivo el fungir a modo de catálogo de todas las esculturas de Las Tunas, donde se las pueda encontrar, estudiar y localizar.
 
