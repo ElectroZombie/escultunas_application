@@ -1,5 +1,7 @@
-import 'package:escultunas_application/widgets/gradient.dart';
+
 import 'package:flutter/material.dart';
+
+import 'gradient.dart';
 
 Drawer drawer(context) {
   return Drawer(

@@ -7,12 +7,33 @@ import 'carousel_text.dart';
 
 final List<String> imgList = [
   'assets/images/image_1.png',
-  'assets/images/image_2.png',
+  'assets/images/image_2.jpg',
   'assets/images/image_3.png',
   'assets/images/image_4.png',
   'assets/images/image_5.png',
   'assets/images/image_6.png',
-  'assets/images/image_7.png'
+  'assets/images/image_7.png',
+  'assets/images/image_8.jpg',
+  'assets/images/image_9.jpg',
+  'assets/images/image_10.png',
+  'assets/images/image_11.png',
+  'assets/images/image_12.png',
+  'assets/images/image_13.png',
+  'assets/images/image_14.png',
+  'assets/images/image_15.png',
+  'assets/images/image_16.png',
+  'assets/images/image_17.png',
+  'assets/images/image_18.png',
+  'assets/images/image_19.png',
+  'assets/images/image_20.png',
+  'assets/images/image_21.png',
+  'assets/images/image_22.png',
+  'assets/images/image_23.png',
+  'assets/images/image_24.png',
+  'assets/images/image_25.png',
+  'assets/images/image_26.png',
+  'assets/images/image_27.png',
+  'assets/images/image_28.png',
 ];
 
 final List<String> textList = [
@@ -22,7 +43,28 @@ final List<String> textList = [
   'Trovador campesino',
   'Columna Taína',
   'Cabezas contrapuestas de los indios Maniabo y Jibacoa',
-  'Caballo'
+  'Caballo',
+  "Liberación de los pueblos",
+  "Plaza Martiana",
+  "Gimnasta",
+  "Che",
+  "Sin título",
+  "Cabildo",
+  "Columnas",
+  "Lenin",
+  "Obelisco a los Mártires de las Guerras de Independencia",
+  "Efigie de José Martí",
+  "Cucalambé",
+  "Mayor General Vicente García",
+  "Estatua de Vicente García",
+  "Busto de Federico Capdevila",
+  "Fuente escultórica Las Tunas",
+  "Busto de Maceo",
+  "Mural escultórico del centro histórico",
+  "Mural escultórico",
+  "Entre la vida y la muerte",
+  "Escudo de Las Tunas",
+  "Busto de José Martí",
 ];
 
 List<T> map<T>(List list, Function handler) {
@@ -125,16 +167,17 @@ class CarouselWithIndicatorState extends State<CarouselWithIndicator> {
           children: map<Widget>(
             imgList,
             (index, url) {
-              return Container(
-                width: _current == index ? 32.0 : 20.0,
-                height: 3.0,
-                margin:
-                    const EdgeInsets.symmetric(vertical: 10.0, horizontal: 2.0),
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  color: _current == index
-                      ? const Color(0xFF1BBC9B)
-                      : const Color(0xFF707070),
+              return Expanded(
+                child: Container(
+                  height: 3.0,
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 2.0),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    color: _current == index
+                        ? const Color(0xFF1BBC9B)
+                        : const Color(0xFF707070),
+                  ),
                 ),
               );
             },

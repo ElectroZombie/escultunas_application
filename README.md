@@ -1,13 +1,16 @@
-# escultunas_aplicattion
+# flutter_application_4
 
-Esta aplicación tiene como objetivo el fungir a modo de catálogo de todas las esculturas de Las Tunas, donde se las pueda encontrar, estudiar y localizar.
+A new Flutter project.
 
-Building Specs:
- Flutter SDK: 3.13.0
- Dart SDK: 3.1.0
- Android SDK: 31.0.0
- Java Version: 17.0.8
+## Getting Started
 
-Authors:
- Joan Manuel Molina Gómez
- Eric Michel Villavicencio Reyes
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
