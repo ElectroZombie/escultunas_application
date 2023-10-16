@@ -1,9 +1,12 @@
-import 'package:escultunas_application/db/precalc.dart';
+
 import 'package:flutter/material.dart';
 
+import '../db/precalc.dart';
 import '../widgets/carousel_with_indicator.dart';
 import '../widgets/drawer.dart';
 import '../widgets/gradient.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'package:qrscan/qrscan.dart' as scanner;
 
 class Principal extends StatefulWidget {
   const Principal({Key? key}) : super(key: key);
@@ -12,8 +15,8 @@ class Principal extends StatefulWidget {
   PrincipalState createState() => PrincipalState();
 }
 
-void initState() {
-  insertarDatosBD();
+void initState()async {
+  await insertarDatosBD();
 }
 
 goToPage(context) {
@@ -28,6 +31,14 @@ class PrincipalState extends State<Principal> {
         shadowColor: Colors.lightGreenAccent,
         backgroundColor: Colors.greenAccent,
         title: const Text('EsculTunas'),
+         actions: [
+    IconButton(
+      onPressed: () {
+        _scan();
+      },
+      icon: Icon(Icons.qr_code),
+    ),
+  ],
       ),
       drawer: drawer(context),
       body: Stack(
@@ -44,7 +55,7 @@ class PrincipalState extends State<Principal> {
                     width: double.infinity,
                     height: 300, // Ajustar la altura de la imagen aquí
                     child: Image.asset(
-                      'assets/images/escudo_tunas.png',
+                      'assets/images/logo.png',
                       fit: BoxFit.scaleDown,
                     ),
                   ),
@@ -72,5 +83,16 @@ class PrincipalState extends State<Principal> {
         ],
       ),
     );
+  }
+
+
+   Future _scan() async {
+    await Permission.camera.request();
+    String? barcode = await scanner.scan();
+    if (barcode == null) {
+      print('nothing return.');
+    } else {
+      //this._outputController.text = barcode;
+    }
   }
 }

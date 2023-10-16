@@ -1,7 +1,7 @@
 # escultunas_application
-#V1.2.4
+#V1.3.6
 
-Esta aplicación tiene como objetivo el fungir a modo de catálogo de todas las esculturas de Las Tunas, donde se las pueda encontrar, estudiar y localizar.
+A new Flutter project.
 
 Building Specs:\n
  Flutter SDK: 3.13.0\n

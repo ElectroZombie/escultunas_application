@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+import 'db/precalc.dart';
 import 'frames/wiki.dart';
 import 'frames/news.dart';
 import 'frames/principal.dart';
@@ -8,14 +10,26 @@ import 'frames/sculptures_list.dart';
 import 'frames/specific_new.dart';
 import 'models/sculpture_model.dart';
 
-//import 'package:flutter_application_4/frames/sculptures_map.dart';
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  bool isFirstTime = prefs.getBool('isFirstTime') ?? true;
 
-void main() {
+  if (isFirstTime) {
+     await insertarDatosBD();
+    await prefs.setBool('isFirstTime', false);
+  }
+
   runApp(const MainApp());
 }
 
+Future<void> metodo1() async {
+  // Lógica del método 1
+  print('Ejecutando el método 1...');
+}
+
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  const MainApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +41,6 @@ class MainApp extends StatelessWidget {
         "/": (context) => const Principal(),
         "/sculptures_list": (context) => const SculpturesList(),
         "/sculpture_data": (context) => const SculptureData(SculptureModel),
-        //"/sculptures_map": (context) => const SculpturesMap(),
         "/news": (context) => const News(),
         "/specific_new": (context) => const SpecificNew(),
         "/wiki": (context) => const Wiki(),
