@@ -6,7 +6,7 @@ class SculptureModel {
   String? foto;
   int? id;
   String? material;
-  String? mov_escultorico;
+  String? movEscultorico;
   double? xpos;
   double? ypos;
 
@@ -18,7 +18,7 @@ class SculptureModel {
       required this.descripcion,
       this.foto,
       this.material,
-      this.mov_escultorico,
+      this.movEscultorico,
       this.xpos,
       this.ypos});
 
@@ -31,7 +31,7 @@ class SculptureModel {
       'descripcion': descripcion,
       'foto': foto,
       'material': material,
-      'mov_escultorico': mov_escultorico,
+      'mov_escultorico': movEscultorico,
       'xpos': xpos,
       'ypos': ypos
     };

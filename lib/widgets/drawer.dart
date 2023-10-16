@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'gradient.dart';
@@ -57,7 +56,7 @@ Drawer drawer(context) {
           const SizedBox(height: 150),
           const ListTile(
             leading: Icon(Icons.adb),
-            title: Text("Versión: 1.0.2"),
+            title: Text("Versión: 1.3.6"),
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -65,15 +64,14 @@ Drawer drawer(context) {
                 Text("Dart SDK: 3.1.0"),
                 Text("Android SDK: 31.0.0"),
                 Text("Java Version: 17.0.8"),
-                SizedBox(height: 10),
-                Text("Autores:"),
-                Text("Joan Manuel Molina Gómez"),
-                Text("Eric Michel Villavicencio Reyes"),
-                SizedBox(height: 10),
                 SizedBox(
                     height: 40,
                     width: 40,
-                    child: Image(image: AssetImage("assets/logos/guayaba.jpg")))
+                    child:
+                        Image(image: AssetImage("assets/logos/guayaba.jpg"))),
+                Text("Autores:"),
+                Text("Joan Manuel Molina Gómez"),
+                Text("Eric Michel Villavicencio Reyes"),
               ],
             ),
           )

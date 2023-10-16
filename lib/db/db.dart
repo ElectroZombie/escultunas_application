@@ -1,5 +1,5 @@
-
 import 'package:sqflite/sqflite.dart';
+// ignore: depend_on_referenced_packages
 import 'package:path/path.dart';
 
 import '../models/sculpture_model.dart';
@@ -45,7 +45,7 @@ class DB {
             nombre: escMap[i]['nombre'],
             fecha: escMap[i]['fecha'],
             autor: escMap[i]['autor'],
-            mov_escultorico: escMap[i]['mov_escultorico'],
+            movEscultorico: escMap[i]['mov_escultorico'],
             id: escMap[i]['id'],
             descripcion: escMap[i]['descripcion'],
             material: escMap[i]['material'],
@@ -56,8 +56,8 @@ class DB {
 
   static Future<List<SculptureModel>> getSculptureByID(int id) async {
     Database database = await _openDB();
-    final List<Map<String, dynamic>> provedoresMap = await database
-        .query("escultura", where: "id = ?", whereArgs: [id]);
+    final List<Map<String, dynamic>> provedoresMap =
+        await database.query("escultura", where: "id = ?", whereArgs: [id]);
 
     return List.generate(
         provedoresMap.length,
@@ -65,7 +65,7 @@ class DB {
             nombre: provedoresMap[i]['nombre'] as String,
             autor: provedoresMap[i]['autor'] as String,
             fecha: provedoresMap[i]['fecha'] as String,
-            mov_escultorico: provedoresMap[i]['mov_escultorico'] as String,
+            movEscultorico: provedoresMap[i]['mov_escultorico'] as String,
             material: provedoresMap[i]['material'] as String,
             id: provedoresMap[i]['id'] as int,
             foto: provedoresMap[i]['foto'] as String,

@@ -88,7 +88,7 @@ Widget sculptureInformation(SculptureModel escultura) {
                   ),
                 ),
                 Text(
-                  escultura.mov_escultorico!,
+                  escultura.movEscultorico!,
                   style: const TextStyle(
                     fontSize: 14, // Tamaño de fuente aumentado
                     color: Colors.grey, // Color de fuente gris

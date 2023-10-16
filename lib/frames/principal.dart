@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../db/precalc.dart';
@@ -15,7 +14,7 @@ class Principal extends StatefulWidget {
   PrincipalState createState() => PrincipalState();
 }
 
-void initState()async {
+void initState() async {
   await insertarDatosBD();
 }
 
@@ -31,14 +30,14 @@ class PrincipalState extends State<Principal> {
         shadowColor: Colors.lightGreenAccent,
         backgroundColor: Colors.greenAccent,
         title: const Text('EsculTunas'),
-         actions: [
-    IconButton(
-      onPressed: () {
-        _scan();
-      },
-      icon: Icon(Icons.qr_code),
-    ),
-  ],
+        actions: [
+          IconButton(
+            onPressed: () {
+              _scan();
+            },
+            icon: const Icon(Icons.qr_code),
+          ),
+        ],
       ),
       drawer: drawer(context),
       body: Stack(
@@ -85,12 +84,10 @@ class PrincipalState extends State<Principal> {
     );
   }
 
-
-   Future _scan() async {
+  Future _scan() async {
     await Permission.camera.request();
     String? barcode = await scanner.scan();
     if (barcode == null) {
-      print('nothing return.');
     } else {
       //this._outputController.text = barcode;
     }
