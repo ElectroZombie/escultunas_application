@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../db/precalc.dart';
+import '../services/precalc.dart';
 import '../widgets/carousel_with_indicator.dart';
 import '../widgets/drawer.dart';
 import '../widgets/gradient.dart';

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'db/precalc.dart';
-import 'frames/wiki.dart';
-import 'frames/news.dart';
-import 'frames/principal.dart';
-import 'frames/sculpture_data.dart';
-import 'frames/sculptures_list.dart';
-import 'frames/specific_new.dart';
+import 'services/precalc.dart';
+import 'views/wiki.dart';
+import 'views/news.dart';
+import 'views/principal.dart';
+import 'views/sculpture_data.dart';
+import 'views/sculptures_list.dart';
+import 'views/specific_new.dart';
 import 'models/sculpture_model.dart';
 
 void main() async {
@@ -16,16 +16,11 @@ void main() async {
   bool isFirstTime = prefs.getBool('isFirstTime') ?? true;
 
   if (isFirstTime) {
-     await insertarDatosBD();
+    await insertarDatosBD();
     await prefs.setBool('isFirstTime', false);
   }
 
   runApp(const MainApp());
-}
-
-Future<void> metodo1() async {
-  // Lógica del método 1
-  print('Ejecutando el método 1...');
 }
 
 class MainApp extends StatelessWidget {

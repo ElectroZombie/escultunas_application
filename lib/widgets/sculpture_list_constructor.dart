@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/sculpture_model.dart';
 
 toPage(SculptureModel data, context) {
-  List <SculptureModel> data2 = [data];
+  List<SculptureModel> data2 = [data];
   Navigator.pushNamed(context, "/sculpture_data", arguments: data2);
 }
 

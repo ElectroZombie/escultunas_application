@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:flutter/material.dart';
 
-import '../db/db.dart';
+import '../services/db.dart';
 import 'carousel_text.dart';
 
 final List<String> imgList = [
